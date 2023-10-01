@@ -19,11 +19,11 @@ def main():
 
     #  Filepath to pickled dictionary of the prepared data.
     decompose.path_to_pickle_file = os.path.join(
-        'decomposition_grs', 'gpy_prepared', 'grs-test_field.pickle')
+        'decomposition_grs', 'gpy_prepared', 'cloud_sub_cube.pickle')
     #  First smoothing parameter
-    decompose.alpha1 = 2.58
+    decompose.alpha1 = 1.59
     #  Second smoothing parameter
-    decompose.alpha2 = 5.14
+    decompose.alpha2 = 5.9
     #  Suffix for the filename of the pickled dictionary with the decomposition results.
     decompose.suffix = '_g+'
     #  Start the decomposition.
@@ -40,7 +40,7 @@ def main():
     path_to_pickled_file = decompose.path_to_pickle_file
     #  Filepath to pickled dictionary with the decomposition results
     path_to_decomp_pickle = os.path.join(
-        'decomposition_grs', 'gpy_decomposed', 'grs-test_field_g+_fit_fin.pickle')
+        'decomposition_grs', 'gpy_decomposed', 'cloud_sub_cube_g+_fit_fin.pickle')
     #  Directory in which the plots are saved.
     path_to_plots = os.path.join(
         'decomposition_grs', 'gpy_plots')

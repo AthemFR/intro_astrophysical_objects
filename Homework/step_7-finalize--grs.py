@@ -17,11 +17,11 @@ def main():
 
     #  filepath to the pickled dictionary of the prepared data
     finalize.path_to_pickle_file = os.path.join(
-        'decomposition_grs', 'gpy_prepared', 'grs-test_field.pickle')
+        'decomposition_grs', 'gpy_prepared', 'cloud_sub_cube.pickle')
     #  Filepath to the pickled dictionary of the decomposition results
     finalize.path_to_decomp_file = os.path.join(
         'decomposition_grs', 'gpy_decomposed',
-        'grs-test_field_g+_fit_fin_sf-p2.pickle')
+        'cloud_sub_cube_g+_fit_fin_sf-p2.pickle')
 
     finalize.finalize_dct()
     finalize.make_table()

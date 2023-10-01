@@ -20,11 +20,11 @@ def main():
 
     #  filepath to the pickled dictionary of the prepared data
     sp.path_to_pickle_file = os.path.join(
-        'decomposition_grs', 'gpy_prepared', 'grs-test_field.pickle')
+        'decomposition_grs', 'gpy_prepared', 'cloud_sub_cube.pickle')
     #  Filepath to the pickled dictionary of the decomposition results
     sp.path_to_decomp_file = os.path.join(
         'decomposition_grs', 'gpy_decomposed',
-        'grs-test_field_g+_fit_fin_sf-p1.pickle')
+        'cloud_sub_cube_g+_fit_fin_sf-p1.pickle')
     #  Try to refit blended fit components
     sp.refit_blended = True
     #  Try to refit spectra with negative residual features
@@ -62,7 +62,7 @@ def main():
     #  Filepath to the pickled dictionary with the decomposition results
     path_to_decomp_pickle = os.path.join(
         'decomposition_grs', 'gpy_decomposed',
-        'grs-test_field_g+_fit_fin_sf-p2.pickle')
+        'cloud_sub_cube_g+_fit_fin_sf-p2.pickle')
     #  Load the decomposition results
     decompose.load_final_results(path_to_decomp_pickle)
     #  Produce a FITS image showing the number of fitted components
